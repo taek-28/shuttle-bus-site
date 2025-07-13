@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>셔틀버스 실시간 위치 안내</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .banner-image {
+      width: 100%;
+      max-height: 260px;
+      object-fit: cover;
+    }
+
+    .banner-text {
+      margin-top: 12px;
+      font-size: 1.4rem;
+      color: #333;
+      padding: 0 12px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin: 32px 0;
+      padding: 0 16px;
+    }
+
+    .bus-button {
+      width: 100%;
+      max-width: 400px;
+      padding: 14px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.15rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bus-button:hover {
+      background-color: #45a049;
+    }
+
+    .button-image {
+      width: 100%;
+      height: auto;
+      max-height: 140px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    /* 모바일 반응형 최적화 */
+    @media (max-width: 480px) {
+      .banner-text {
+        font-size: 1.2rem;
+      }
+
+      .bus-button {
+        font-size: 1rem;
+        padding: 12px;
+      }
+
+      .button-container {
+        gap: 12px;
+        margin: 24px 0;
+      }
+
+      .button-image {
+        max-height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="banner-image.jpg" alt="배너 이미지" class="banner-image">
+    <div class="banner-text">저희의 결혼식에 참석해주셔서 감사합니다.<br>
+    빌라드지디 안양 실시간 셔틀버스 위치 안내</div>
+  </header>
+
+  <div class="button-container">
+    <a href="http://route.hellobus.co.kr:8787/pub/routeView/villadegd/villadegd_03.html" class="bus-button" target="_blank">
+      <img src="click.png" alt="버튼1 이미지" class="button-image">
+      셔틀 버스 실시간 위치 (인덕원역)
+    </a>
+
+    <a href="http://route.hellobus.co.kr:8787/pub/routeView/villadegd/villadegd_05.html" class="bus-button" target="_blank">
+      <img src="click.png" alt="버튼2 이미지" class="button-image">
+      셔틀 버스 실시간 위치 (제2주차장)
+    </a>
+
+    <a href="https://villadegdanyang.imweb.me/62" class="bus-button" target="_blank">
+      <img src="click.png" alt="버튼3 이미지" class="button-image">
+      제2주차장 위치 및 지도 안내 서비스
+    </a>
+  </div>
+</body>
+</html>
